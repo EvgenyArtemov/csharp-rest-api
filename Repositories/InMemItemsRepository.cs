@@ -1,4 +1,5 @@
 using Catalog.Entities;
+using Catalog.Dtos;
 
 namespace Catalog.Repositories;
 
