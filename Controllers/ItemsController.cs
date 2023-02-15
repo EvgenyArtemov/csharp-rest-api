@@ -9,11 +9,11 @@ namespace Catalog.Controllers;
 [Route("items")]
 public class ItemsController : ControllerBase
 {
-     private readonly InMemItemsRepository repository;
+     private readonly IInMemItemsRepository repository; 
 
-     public ItemsController()
+     public ItemsController(IInMemItemsRepository repository)
      {
-          repository = new InMemItemsRepository();
+          this.repository = repository;
      }
 
      // we define this attribute to react on GET request
